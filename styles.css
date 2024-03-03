@@ -1,0 +1,169 @@
+/* Globales */
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: hsl(234, 29%, 20%);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 4rem;
+    color: hsl(234, 29%, 20%);
+    margin: 0;
+    text-size-adjust: auto;
+}
+
+@media (max-width:480px ) {
+   h2 {
+    font-size: 3rem;
+   }
+}
+
+p {
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Contenido */
+
+.contenedor {
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 25px;
+    gap: 2rem;
+}
+
+.escondido {
+    overflow: hidden;
+    height: 0;
+}
+
+@media (max-width: 768px ) {
+   .contenedor {
+    flex-direction: column;
+   }
+}
+
+@media (max-width: 768px ) {
+   .contenedor {
+    width: 100%;
+   }
+}
+
+.izquierda {
+    padding: 2rem;
+}
+
+@media (max-width: 768px ) {
+   .izquierda {
+    order: 2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
+}
+
+
+.list-style {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    width: 100%;
+    padding: 1.5rem;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(234, 20%, 60%);  
+}
+
+.email {
+    padding: 1.5rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+        
+}
+
+.emailRojo {
+    background-color: hsl(4, 100%, 94%);
+}
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Enviado */
+
+.aparecer {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 25px;
+    gap: 2rem;
+    width: 30%;
+ 
+}
+
+@media (max-width: 768px ) {
+   .aparecer {
+    width: 70%;
+   }
+}
+
+.contenedor-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 0; 
+}
+
+.activo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-mensajes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-mensajes p {
+    margin-bottom: 0;
+}
+
+.error {
+    color: hsl(4, 100%, 67%);
+}
+

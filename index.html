@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<main class="prueba">
+<div class="contenedor">
+  <div class="izquierda">
+    <h2 class="title">Stay updated!</h2>
+  <p class="info">Join 60,000+ product managers receiving monthly updates on:</p>
+  <ul class="list">
+    <div class="list-style">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <li>Product discovery and building what matters</li>
+    </div>
+    <div class="list-style">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <li>Measuring to ensure updates are a success</li>
+    </div>
+    <div class="list-style">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <li>And much more!</li>
+    </div>
+  </ul>
+  <form action="submit" class="formulario">
+    <div class="contenedor-mensajes">
+      <p>Email adress</p>
+      <div><p class="error"></p></div>
+      
+    </div>
+    
+    <div class="contenedor-form">
+      <input type="email" class="email" placeholder="email@company.com">
+      <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+    </div>
+    
+  </form>
+  </div> 
+  <div class="derecha">
+    <picture>
+      <source media="(min-width:992px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+      <source media="(max-width:768px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="Flowers" style="width:auto;">
+  </picture>
+  </div>
+  
+</div> 
+</main>
+
+<div class="contenedor-dos">
+  <div class="aparecer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
+    <h2>Thanks for subscribing!</h2>
+    <p>A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button id="discard" class="btn">Dismiss message</button>
+  </div> 
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
